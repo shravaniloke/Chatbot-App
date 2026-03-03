@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Kamal Classes ChatBot</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            width: 450px;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #4e73df;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #4e73df;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🎓 Kamal Classes ChatBot</h1>
+
+    <form method="POST">
+        <textarea rows="8">{{ chat }}</textarea>
+        <br>
+        <input type="text" name="qts" placeholder="Ask about courses, fees, timings..." required />
+        <br>
+        <button type="submit">Ask</button>
+    </form>
+</div>
+
+</body>
+</html>
